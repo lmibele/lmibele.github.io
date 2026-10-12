@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 /*!
 * Start Bootstrap - Clean Blog v6.0.9 (https://startbootstrap.com/theme/clean-blog)
 * Copyright 2013-2023 Start Bootstrap
@@ -10796,3 +10797,7 @@ header.masthead .post-heading .meta a {
     font-size: 2.25rem;
   }
 }
+   body, h1, h2, h3, h4, h5, h6, p, li,
+   .navbar, .nav-link, .navbar-brand, .subheading, .btn {
+       font-family: 'Outfit', sans-serif !important;
+   }
