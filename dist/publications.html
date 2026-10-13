@@ -19,6 +19,23 @@
             .pub-authors strong { font-weight: 400; color: #9B22A8; }
             .pub-venue { display: block; color: #6c757d; }
             .pub-year-heading { margin-top: 2.5rem; }
+            .pub-list li[data-year] {
+                position: relative;
+                border-top: 1px solid #e3e3e3;
+                margin-top: 2.25rem;
+                padding-top: 1.25rem;
+            }
+            .pub-list li[data-year]::after {
+                content: attr(data-year);
+                position: absolute;
+                top: -0.7rem;
+                right: 0;
+                padding: 0 0.6rem;
+                background: #fff;
+                font-size: 0.8rem;
+                letter-spacing: 0.08em;
+                color: #9aa0a6;
+            }
         </style>
     </head>
     <body>
@@ -70,7 +87,7 @@
                           All numbers update by themselves.
                     -->
                     <ol reversed class="pub-list">
-                        <li>
+                        <li data-year="2026">
                             <span class="pub-authors">C. Albani, M. Barbatti, <strong>L. M. Ibele</strong></span>
                             <a class="pub-title" href="https://doi.org/10.26434/chemrxiv.15010274/v1" target="_blank" rel="noopener">Solvent Dynamics and Multiconfigurational Treatment Drive the Anomalous Stokes Shift of HINA</a>
                             <span class="pub-venue"><em>ChemRxiv</em> submitted (2026)</span>
@@ -105,7 +122,7 @@
                             <span class="pub-venue"><em>J. Chem. Theory Comput.</em> 22, 5, 2170-2184 (2026)</span>
                         </li>
 
-                        <li>
+                        <li data-year="2025">
                             <span class="pub-authors"><strong>L. M. Ibele</strong>, C. Adamo, D. Avagliano</span>
                             <a class="pub-title" href="https://doi.org/10.1021/acs.jctc.5c01200" target="_blank" rel="noopener">Benchmarking density functional approximations in nonadiabatic dynamics: <em>trans</em>-<em>cis</em> isomerization in retinal model</a>
                             <span class="pub-venue"><em>J. Chem. Theory Comput.</em> 21, 19, 9799–9813 (2025)</span>
@@ -141,7 +158,7 @@
                             <span class="pub-venue"><em>J. Chem. Phys.</em> 162, 10, 104117 (2025)</span>
                         </li>
 
-                        <li>
+                        <li data-year="2024">
                             <span class="pub-authors"><strong>L. M. Ibele</strong>, A. Memhood, B.G. Levine, D. Avagliano</span>
                             <a class="pub-title" href="https://doi.org/10.1021/acs.jctc.4c00855" target="_blank" rel="noopener">Ab Initio Multiple Spawning Nonadiabatic Dynamics with Different CASPT2 Flavors: A Fully Open-Source PySpawn/OpenMolcas Interface</a>
                             <span class="pub-venue"><em>J. Chem. Theory Comput.</em> 20, 18, 8140-8151 (2024)</span>
@@ -177,7 +194,7 @@
                             <span class="pub-venue"><em>J. Chem. Theory Comput.</em> 20, 2, 580-596 (2024)</span>
                         </li>
 
-                        <li>
+                        <li data-year="2023">
                             <span class="pub-authors"><strong>L. M. Ibele</strong>, E. Sangiogo Gil, B. F. E. Curchod, F. Agostini</span>
                             <a class="pub-title" href="https://doi.org/10.1021/acs.jpclett.3c02672" target="_blank" rel="noopener">On the Nature of Geometric and Topological Phases in the Presence of Conical Intersections</a>
                             <span class="pub-venue"><em>J. Phys. Chem. Lett.</em> 14, 51, 11625-11631 (2023)</span>
@@ -189,13 +206,19 @@
                             <span class="pub-venue"><em>J. Chem. Theory Comput.</em> 19, 21, 7787-7800 (2023)</span>
                         </li>
 
-                        <li>
+                        <li data-year="2022">
                             <span class="pub-authors"><strong>L. M. Ibele</strong>, B. F. E. Curchod, F. Agostini</span>
                             <a class="pub-title" href="https://doi.org/10.1021/acs.jpca.1c09604" target="_blank" rel="noopener">A photochemical reaction in different theoretical representations</a>
                             <span class="pub-venue"><em>J. Phys. Chem. A</em> 126, 7, 1263-1281 (2022)</span>
                         </li>
-
+                        
                         <li>
+                            <span class="pub-authors"><strong>L. M. Ibele</strong>, C. Pieroni, F. Talotta, B. F. E. Curchod, D. Lauvergnat, F. Agostini</span>
+                            <a class="pub-title" href="https://doi.org/10.1016/B978-0-12-821978-2.00030-1" target="_blank" rel="noopener">Exact factorization of the electron-nuclear wavefunction: Fundamentals and algorithms</a>
+                            <span class="pub-venue"> in “<em>Comprehensive Computational Chemistry</em>”, Eds. L. González, R. Boyd, and M. Yanez, Elsevier, (2022).</span>
+                        </li>
+
+                        <li data-year="2021">
                             <span class="pub-authors"><strong>L. M. Ibele</strong>, B. F. E. Curchod</span>
                             <a class="pub-title" href="https://doi.org/10.1063/5.0071376" target="_blank" rel="noopener">Dynamics near a conical intersection – a diabolical compromise for the approximations of ab initio multiple spawning</a>
                             <span class="pub-venue"><em>J. Chem. Phys.</em> 155, 7, 174119 (2021)</span>
@@ -213,7 +236,7 @@
                             <span class="pub-venue"><em>J. Chem. Phys.</em> 154, 10, 104110 (2021)</span>
                         </li>
 
-                        <li>
+                        <li data-year="2020">
                             <span class="pub-authors">S. Pathak, <strong>L. M. Ibele</strong>, R. Boll, C. Callegari, A. Demidovich, B. Erk, R. Feifel, R. Forbes, M. Di Fraia, L. Giannessi, C. S. Hansen, D. M. P. Holland, R. A. Ingle, R. Mason, O. Plekan, K. C. Prince, A. Rouzée, R. J Squibb, J. Tross, M. N. R. Ashfold, B. F. E. Curchod, D. Rolles</span>
                             <a class="pub-title" href="https://doi.org/10.1038/s41557-020-0507-3" target="_blank" rel="noopener">Tracking the ultraviolet-induced photochemistry of thiophenone during and after ultrafast ring opening</a>
                             <span class="pub-venue"><em>Nat. Chem.</em> 12, 9, 795-800 (2020)</span>
@@ -243,7 +266,7 @@
                             <span class="pub-venue"><em>J. Phys. Chem. Lett.</em> 11, 18, 7483-7488 (2020)</span>
                         </li>
 
-                        <li>
+                        <li data-year="2019">
                             <span class="pub-authors">S. Gómez, <strong>L. M. Ibele</strong>, L. González</span>
                             <a class="pub-title" href="https://doi.org/10.1039/C8CP07766E" target="_blank" rel="noopener">The 3s Rydberg state as a doorway state in the ultrafast dynamics of 1,1-difluoroethylene</a>
                             <span class="pub-venue"><em>Phys. Chem. Chem. Phys.</em> 21, 9, 4871-4878 (2019)</span>
